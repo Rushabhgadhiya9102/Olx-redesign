@@ -7,3 +7,13 @@
 ::placeholder{
    color: gray !important;
 }
+
+.recommendation-item .card p{
+    font-size: small !important;
+}
+
+.recommendation-item:hover{
+    transform: translateY(-20px);
+    transition: 0.2s ease-in-out;
+    
+}
