@@ -13,6 +13,6 @@
 }
 
 .recommendation-item:hover{
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: 0.2s ease-in-out;
 }
