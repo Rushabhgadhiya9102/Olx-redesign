@@ -8,11 +8,16 @@
    color: gray !important;
 }
 
-.recommendation-item .card p{
+.recommendation-item .card p, .similar-section-item .card p{
     font-size: small !important;
 }
 
-.recommendation-item:hover{
+.recommendation-item:hover, .similar-section-item:hover{
     transform: translateY(-10px);
     transition: 0.2s ease-in-out;
+}
+
+.similar-section-item img, .recommendation-item img{
+    object-fit: cover;
+    object-position: top;
 }

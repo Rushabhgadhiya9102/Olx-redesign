@@ -4,4 +4,4 @@ $(".show-more-less").on("click", function(){
     $(".more-less").slideToggle(1000);
 });
 
-$("#home-page").hide()
+// $("#home-page").hide()
