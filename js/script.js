@@ -4,4 +4,13 @@ $(".show-more-less").on("click", function(){
     $(".more-less").slideToggle(1000);
 });
 
-// $("#home-page").hide()
+
+$("#product-details").hide()
+$(".recommendation-item").on("click", function(){
+    $("#product-details,#home-page").toggle();
+})
+
+$(".navbar-brand").on("click", function () {
+  $("#home-page").show();
+  $("#product-details").hide();
+});
