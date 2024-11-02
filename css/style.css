@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
+#home-page, 
+#product-details{
+    padding-top: 80px;
+}
+
 ::placeholder{
    color: gray !important;
+}
+
+input:focus{
+   outline: none !important;
+}
+
+.search{
+    width: 100%;
+    padding: 5px;
 }
 
 .recommendation-item .card p, .similar-section-item .card p{

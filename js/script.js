@@ -14,3 +14,23 @@ $(".navbar-brand").on("click", function () {
   $("#home-page").show();
   $("#product-details").hide();
 });
+
+
+$(document).ready(function () {
+  var lastScrollTop = 0;
+  var navbar = $(".navbar");
+
+  $(window).scroll(function () {
+    var st = $(this).scrollTop();
+
+    if (st > lastScrollTop) {
+      // Scroll Down
+      navbar.css("top", "-86px"); // Hide the navbar
+      navbar.css("transition", "0.3s"); // Hide the navbar
+    } else {
+      // Scroll Up
+      navbar.css("top", "0"); // Show the navbar
+    }
+    lastScrollTop = st;
+  });
+});
