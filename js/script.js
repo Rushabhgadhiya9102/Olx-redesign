@@ -5,15 +5,15 @@ $(".show-more-less").on("click", function(){
 });
 
 
-$("#product-details").hide()
-$(".recommendation-item").on("click", function(){
-    $("#product-details,#home-page").toggle();
-})
+// $("#product-details").hide()
+// $(".recommendation-item").on("click", function(){
+//     $("#product-details,#home-page").toggle();
+// })
 
-$(".navbar-brand").on("click", function () {
-  $("#home-page").show();
-  $("#product-details").hide();
-});
+// $(".navbar-brand").on("click", function () {
+//   $("#home-page").show();
+//   $("#product-details").hide();
+// });
 
 
 $(document).ready(function () {
