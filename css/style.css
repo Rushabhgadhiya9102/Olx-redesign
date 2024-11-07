@@ -34,7 +34,3 @@ input:focus{
     object-fit: cover;
     object-position: top;
 }
-
-.carousel-item{
-    height: 530px;
-}
