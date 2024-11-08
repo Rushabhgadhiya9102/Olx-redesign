@@ -41,11 +41,25 @@ $(document).ready(function () {
   $(".add-to-cart").on("click", function () {
     // Clone the card
     var cardClone = $(this).closest(".card").clone();
+    
+    cardClone.css("width","310px");
 
     // Optionally, you can modify the cloned card (e.g., change the button text)
-    cardClone.find(".add-to-cart").text("Added to Cart").prop("disabled", true);
+    cardClone.find(".add-to-cart").text("item saved").prop("disabled", true);
 
     // Append the cloned card to the cart container
     $("#cart-container").append(cardClone);
   });
 });
+
+// TOAST
+
+const toastTrigger = document.getElementById("liveToastBtn");
+const toastLiveExample = document.getElementById("liveToast");
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastTrigger.addEventListener("click", () => {
+    toastBootstrap.show();
+  });
+}
