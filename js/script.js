@@ -34,3 +34,18 @@ $(document).ready(function () {
     lastScrollTop = st;
   });
 });
+
+// CART SETIONN
+
+$(document).ready(function () {
+  $(".add-to-cart").on("click", function () {
+    // Clone the card
+    var cardClone = $(this).closest(".card").clone();
+
+    // Optionally, you can modify the cloned card (e.g., change the button text)
+    cardClone.find(".add-to-cart").text("Added to Cart").prop("disabled", true);
+
+    // Append the cloned card to the cart container
+    $("#cart-container").append(cardClone);
+  });
+});
