@@ -45,7 +45,7 @@ $(document).ready(function () {
     cardClone.css("width","310px");
 
     // Optionally, you can modify the cloned card (e.g., change the button text)
-    cardClone.find(".add-to-cart").text("item saved").prop("disabled", true);
+    cardClone.find(".add-to-cart").hide().prop("disabled", true);
 
     // Append the cloned card to the cart container
     $("#cart-container").append(cardClone);
