@@ -5,8 +5,9 @@
     /* outline: 1px solid red; */
 }
 
-#home-page{
-    padding-top: 80px;
+#home-page,
+#cart-section{
+    /* padding-top: 80px; */
 }
 
 ::placeholder{

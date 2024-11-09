@@ -35,20 +35,31 @@ $(document).ready(function () {
   });
 });
 
-// CART SETIONN
+// CART SECTION
+
+$(document).ready(function(){
+
+   const cart = $(".cart-section");
+   const home = $("#home-page");
+   cart.hide(); 
+  $(".bi-handbag-fill").on("click",function(){
+   cart.toggle();
+   home.toggle();
+  })
+})
 
 $(document).ready(function () {
   $(".add-to-cart").on("click", function () {
     // Clone the card
-    var cardClone = $(this).closest(".card").clone();
+    var cardClone = $($(this).attr('for')).clone();
     
     cardClone.css("width","310px");
-
-    // Optionally, you can modify the cloned card (e.g., change the button text)
-    cardClone.find(".add-to-cart").hide().prop("disabled", true);
+    // cardClone.find(".add-to-cart").remove();
 
     // Append the cloned card to the cart container
     $("#cart-container").append(cardClone);
+    $(".offer").append();
+    alert('item saved');
   });
 });
 
