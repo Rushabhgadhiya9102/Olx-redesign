@@ -1,9 +1,80 @@
-$(".more-less,.show-less").hide();
-$(".show-more-less").on("click", function(){
-     $(".show-more, .show-less").toggle();
-    $(".more-less").slideToggle(1000);
+// ---------------------------- N A V I G A T I O N - S E C T I O N ---------------------
+
+// $(document).ready(function () {
+//   var lastScrollTop = 0;
+//   var navbar = $(".navbar");
+
+//   $(window).scroll(function () {
+//     var st = $(this).scrollTop();
+
+//     if (st > lastScrollTop) {
+//       // Scroll Down
+//       navbar.css("top", "-86px"); // Hide the navbar
+//       navbar.css("transition", "0.3s"); // Hide the navbar
+//     } else {
+//       // Scroll Up
+//       navbar.css("top", "0"); // Show the navbar
+//     }
+//     lastScrollTop = st;
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var lastScrollTop = 0;
+  var navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", function () {
+    var st = window.scrollY;
+
+    if (st > lastScrollTop) {
+      // Scroll Down
+      navbar.style.top = "-86px"; // Hide the navbar
+    } else {
+      // Scroll Up
+      navbar.style.top = "0"; // Show the navbar
+    }
+    lastScrollTop = st; // Update last scroll position
+  });
 });
 
+// ---------------------------- N A V I G A T I O N - S E C T I O N - E N D --------------------------
+
+// ---------------------------- C O N T E N T - S E C T I O N (SHOW MORE AND LESS) ---------------------
+
+// $(".more-less,.show-less").hide();
+// $(".show-more-less").on("click", function(){
+//      $(".show-more, .show-less").toggle();
+//     $(".more-less").slideToggle(1000);
+// });
+
+// Hide elements with class 'more-less' and 'show-less' initially
+document.querySelectorAll(".more-less, .show-less").forEach(function (element) {
+  element.style.display = "none";
+});
+
+// Get references to the button and the content elements
+const toggleButton = document.querySelector(".show-more-less");
+const showMoreContent = document.querySelector(".show-more");
+const showLessContent = document.querySelector(".show-less");
+const moreLessContent = document.querySelector(".more-less");
+
+// Add click event listener to the button
+toggleButton.addEventListener("click", function () {
+  // Toggle the visibility of 'show-more' and 'show-less'
+  if (showMoreContent.style.display === "none" || showMoreContent.style.display === "") {
+    showMoreContent.style.display = "block"; // Show more content
+    showLessContent.style.display = "block"; // Show less content
+    moreLessContent.style.display = "flex"; // Show additional content
+    toggleButton.textContent = "Show Less"; // Change button text
+  } else {
+    showMoreContent.style.display = "none"; // Hide more content
+    showLessContent.style.display = "none"; // Hide less content
+    moreLessContent.style.display = "none"; // Hide additional content
+    toggleButton.textContent = "Show More"; // Change button text
+  }
+});
+
+// ---------------------------- C O N T E N T - S E C T I O N (SHOW MORE AND LESS) E N D ---------------------
 
 // $("#product-details").hide()
 // $(".recommendation-item").on("click", function(){
@@ -15,52 +86,57 @@ $(".show-more-less").on("click", function(){
 //   $("#product-details").hide();
 // });
 
+// --------------------------------- C A R T - S E C T I O N ----------------------------
 
 $(document).ready(function () {
-  var lastScrollTop = 0;
-  var navbar = $(".navbar");
-
-  $(window).scroll(function () {
-    var st = $(this).scrollTop();
-
-    if (st > lastScrollTop) {
-      // Scroll Down
-      navbar.css("top", "-86px"); // Hide the navbar
-      navbar.css("transition", "0.3s"); // Hide the navbar
-    } else {
-      // Scroll Up
-      navbar.css("top", "0"); // Show the navbar
-    }
-    lastScrollTop = st;
+  const cart = $(".cart-section");
+  const home = $("#home-page");
+  cart.hide();
+  $(".bi-handbag-fill").on("click", function () {
+    cart.toggle();
+    home.toggle();
   });
 });
 
-// CART SECTION
+// $(document).ready(function () {
+//   $(".add-to-cart").on("click", function () {
+//     // Clone the card
+//     var cardClone = $($(this).attr('for')).clone();
 
-$(document).ready(function(){
-   const cart = $(".cart-section");
-   const home = $("#home-page");
-   cart.hide(); 
-  $(".bi-handbag-fill").on("click",function(){
-   cart.toggle();
-   home.toggle();
-  })
-})
+//     cardClone.css("width","310px");
+//     // Append the cloned card to the cart container
+//     $("#cart-container").append(cardClone);
+//     $(".offer").append();
 
-$(document).ready(function () {
-  $(".add-to-cart").on("click", function () {
-    // Clone the card
-    var cardClone = $($(this).attr('for')).clone();
-    
-    cardClone.css("width","310px");
-    // Append the cloned card to the cart container
-    $("#cart-container").append(cardClone);
-    $(".offer").append();
-    showPopover('item saved')
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all buttons with the class 'add-to-cart'
+  var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Get the ID of the card to clone from the 'for' attribute
+      var cardId = this.getAttribute("for");
+      var cardToClone = document.querySelector(cardId);
+
+      // Clone the card
+      var cardClone = cardToClone.cloneNode(true); // true means deep clone
+
+      // Set the width of the cloned card
+      cardClone.style.width = "310px";
+
+      // Append the cloned card to the cart container
+      document.getElementById("cart-container").appendChild(cardClone);
+    });
   });
 });
 
-// TOAST
+// --------------------------------- C A R T - S E C T I O N - E N D ---------------------------
+
+// ---------------------------------- T O A S T - S E C T I O N --------------------------------
+
 const toastTrigger1 = document.getElementById("liveToastBtn1");
 const toastTrigger2 = document.getElementById("liveToastBtn2");
 const toastTrigger3 = document.getElementById("liveToastBtn3");
@@ -148,3 +224,72 @@ if (toastTrigger12) {
     toastBootstrap.show();
   });
 }
+
+// ---------------------------------- T O A S T - S E C T I O N - E N D -------------------------------
+
+// ---------------------------------- L O G I N - F O R M ( OTP ) -----------------------------------
+
+const inputs = document.querySelectorAll(".otp-field > input");
+const button = document.querySelector(".btn");
+
+window.addEventListener("load", () => inputs[0].focus());
+button.setAttribute("disabled", "disabled");
+
+inputs[0].addEventListener("paste", function (event) {
+  event.preventDefault();
+
+  const pastedValue = (event.clipboardData || window.clipboardData).getData("text");
+  const otpLength = inputs.length;
+
+  for (let i = 0; i < otpLength; i++) {
+    if (i < pastedValue.length) {
+      inputs[i].value = pastedValue[i];
+      inputs[i].removeAttribute("disabled");
+      inputs[i].focus;
+    } else {
+      inputs[i].value = ""; // Clear any remaining inputs
+      inputs[i].focus;
+    }
+  }
+});
+
+inputs.forEach((input, index1) => {
+  input.addEventListener("keyup", (e) => {
+    const currentInput = input;
+    const nextInput = input.nextElementSibling;
+    const prevInput = input.previousElementSibling;
+
+    if (currentInput.value.length > 1) {
+      currentInput.value = "";
+      return;
+    }
+
+    if (nextInput && nextInput.hasAttribute("disabled") && currentInput.value !== "") {
+      nextInput.removeAttribute("disabled");
+      nextInput.focus();
+    }
+
+    if (e.key === "Backspace") {
+      inputs.forEach((input, index2) => {
+        if (index1 <= index2 && prevInput) {
+          input.setAttribute("disabled", true);
+          input.value = "";
+          prevInput.focus();
+        }
+      });
+    }
+
+    button.classList.remove("active");
+    button.setAttribute("disabled", "disabled");
+
+    const inputsNo = inputs.length;
+    if (!inputs[inputsNo - 1].disabled && inputs[inputsNo - 1].value !== "") {
+      button.classList.add("active");
+      button.removeAttribute("disabled");
+
+      return;
+    }
+  });
+});
+
+// ---------------------------------- L O G I N - F O R M ( OTP ) - E N D ----------------------------------

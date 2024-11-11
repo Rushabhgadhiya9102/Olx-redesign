@@ -18,6 +18,10 @@ input:focus{
    outline: none !important;
 }
 
+.navbar{
+     transition: top 0.3s;
+}
+
 .search{
     width: 100%;
     padding: 5px;
@@ -35,6 +39,10 @@ input:focus{
 .similar-section-item img, .recommendation-item img{
     object-fit: cover;
     object-position: top;
+}
+
+.more-less{
+    transition: 1s !important;
 }
 
 .bi-google{
