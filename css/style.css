@@ -5,10 +5,10 @@
     /* outline: 1px solid red; */
 }
 
-#home-page,
+/* #home-page,
 #cart-section{
-    /* padding-top: 80px; */
-}
+    padding-top: 80px;
+} */
 
 ::placeholder{
    color: gray !important;
@@ -18,7 +18,8 @@ input:focus{
    outline: none !important;
 }
 
-.navbar{
+.navbar,
+.more-less{
      transition: top 0.3s;
 }
 
@@ -49,4 +50,14 @@ input:focus{
     background-image: linear-gradient(to right  , #4285F4,#EA4335,#FBBC05,#34A853);
     background-clip: text;
     color: transparent;
+}
+
+.otp-field input {
+    width: 65px;
+}
+
+.otp-field input::-webkit-outer-spin-button,
+.otp-field input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

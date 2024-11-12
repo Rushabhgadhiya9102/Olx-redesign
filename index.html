@@ -3987,8 +3987,7 @@
                     </div>
                     <div class="row g-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <a href="#"
-                                class="btn btn-light w-100 d-flex align-items-center text-black fw-semibold"><i
+                            <a href="#" class="btn btn-light w-100 d-flex align-items-center text-black fw-semibold"><i
                                     class="bi bi-phone me-3 fs-3"></i>Continue with phone</a>
                         </div>
                         <div class="col-4 col-sm-4 col-md-4 col-lg-4">
@@ -4003,19 +4002,19 @@
                     </div>
                     <div class="my-3">
                         <p class="text-center fs-4 fw-semibold">OR</p>
-                        <div class="d-flex justify-content-center"> 
+                        <div class="d-flex justify-content-center">
                             <a href="#" class="fs-4 text-black">Login with Email</a>
                         </div>
                     </div>
                     <div class="mt-5 text-center">
                         <p>All your personal details are safe with us.</p>
                         <p>If you continue, you are accepting <span class="text-primary">OLX Terms and
-                        Conditions and Privacy Policy</span></p>
+                                Conditions and Privacy Policy</span></p>
                     </div>
                 </div>
             </section>
 
-            <section class="login-form-2">
+            <section class="login-form-2 py-5">
                 <div class="container">
                     <div class="login-form-title mb-5">
                         <h2>Enter your phone number</h2>
@@ -4023,42 +4022,91 @@
                     <div class="row g-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <form action="#">
-                               <div class="form-control d-flex align-items-center">
-                                <p class="mb-0 me-2 pe-2 border-0 border-black border-end">+91</p>
-                                <input class="border-0 w-100" type="number" placeholder="phone number">
-                               </div>
-                               <button class="btn btn-success w-100 mt-3">Get OTP</button>
+                                <div class="form-control d-flex align-items-center">
+                                    <p class="mb-0 me-2 pe-2 border-0 border-black border-end">+91</p>
+                                    <input class="border-0 w-100" type="number" placeholder="phone number">
+                                </div>
+                                <button class="btn btn-success w-100 mt-3">Get OTP</button>
                             </form>
-                            <p class="text-center mx-auto w-50 fs-5 mt-3">Your contact number is never shared with external parties
-                            nor do we use it to spam you in any way.</p>
+                            <p class="text-center mx-auto fs-5 mt-3">Your contact number is never shared with
+                                external parties
+                                nor do we use it to spam you in any way.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="login-otp">
+            <section class="login-otp py-5">
                 <div class="container">
                     <div class="otp-title">
                         <h2>Verification</h2>
                         <p>You will get a OTP via SMS</p>
                     </div>
-                                <div class="otp-field mb-4">
-                                    <input class="rounded" type="number" />
-                                    <input class="rounded" type="number" disabled />
-                                    <input class="rounded" type="number" disabled />
-                                    <input class="rounded" type="number" disabled />
-                                    <input class="rounded" type="number" disabled />
-                                    <input class="rounded" type="number" disabled />
-                                </div>
-                                
-                                <button class="btn btn-primary mb-3">
-                                    Verify
-                                </button>
-                                
-                                <p class="resend text-muted mb-0">
-                                    Didn't receive code? <a href="">Request again</a>
-                                </p>
+                    <div class="otp-field mb-4">
+                        <input class="rounded py-3 px-4" type="number" />
+                        <input class="rounded py-3 px-4" type="number" disabled />
+                        <input class="rounded py-3 px-4" type="number" disabled />
+                        <input class="rounded py-3 px-4" type="number" disabled />
+                        <input class="rounded py-3 px-4" type="number" disabled />
+                        <input class="rounded py-3 px-4" type="number" disabled />
+                    </div>
 
+                    <button class="btn btn-success w-100 mb-3">
+                        Verify
+                    </button>
+
+                    <p class="resend text-muted mb-0">
+                        Didn't receive code? <a href="">Request again</a>
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="authentication py-5">
+                <div class="container">
+                    <div class="authentication-title">
+                        <h2>Authentication</h2>
+                    </div>
+                    <div class="row mt-5 g-2">
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                            <form action="#">
+                                <input type="number" class="form-control ">
+                            </form>
+                        </div>
+
+                        <div class="col-11 col-sm-11 col-md-11 col-lg-11">
+                            <form action="#">
+                                <input type="number" class="form-control ">
+                            </form>
+                        </div>
+                        <button class="btn btn-success w-100 my-3">Proceed</button>
+                        <p class="text-center">Your government ID will not be used for unsolicited communications
+                        or shared with external parties.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photo-field py-5">
+                <div class="container">
+                    <div class="photo-field-title mb-5">
+                        <h2>Verification</h2>
+                    </div>
+                   <div class="text-center">
+                    <input class="d-none" type="file" accept="image/*" id="photoInput" capture="environment">
+                    <img id="preview" class="py-5 px-2 mb-3 border rounded" src="" alt="Photo Preview">
+                    <button id="takePhotoButton" class="btn btn-success w-100 mb-3">Take Photo</button>
+                    <button id="nextButton" class="btn btn-light w-100" disabled>Next</button>
+                   </div>
+                </div>
+            </section>
+
+            <section class="login-form-end py-5">
+                <div class="container">
+                    <div class="login-form-end-title text-center mb-5">
+                        <h2>Congratulations!</h2>
+                        <h4>Your verification is complete.</h4>
+                    </div>
+                    <button class="btn btn-success w-100 mt-5">Finish</button>
                 </div>
             </section>
         </article>

@@ -293,3 +293,28 @@ inputs.forEach((input, index1) => {
 });
 
 // ---------------------------------- L O G I N - F O R M ( OTP ) - E N D ----------------------------------
+
+
+
+document.getElementById("takePhotoButton").addEventListener("click", function () {
+  document.getElementById("photoInput").click(); // Trigger the file input click
+});
+
+document.getElementById("photoInput").addEventListener("change", function (event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const preview = document.getElementById("preview");
+      preview.src = e.target.result;
+      preview.style.display = "block"; // Show the preview
+      document.getElementById("nextButton").disabled = false; // Enable the next button
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+document.getElementById("nextButton").addEventListener("click", function () {
+  // Handle the next step in the verification process
+  alert("Next step initiated.");
+});
