@@ -318,3 +318,32 @@ document.getElementById("nextButton").addEventListener("click", function () {
   // Handle the next step in the verification process
   alert("Next step initiated.");
 });
+
+// L O G I N - F O R M 
+
+$(".login-form-2, .login-otp, .authentication, .photo-field, .login-form-end").hide();
+
+$(".first-btn").on('click',function (){
+  $('.login-form-1').hide();
+  $('.login-form-2').show();
+});
+
+$(".second-btn").on('click',function (){
+  $('.login-form-2').hide();
+  $('.login-otp').show();
+});
+
+$(".third-btn").on('click',function (){
+  $('.login-otp').hide();
+  $('.authentication').show();
+});
+
+$(".fourth-btn").on('click',function (){
+  $('.authentication').hide();
+  $('.photo-field').show();
+});
+
+$(".fifth-btn").on('click',function (){
+  $('.photo-field').hide();
+  $('.login-form-end').show();
+});

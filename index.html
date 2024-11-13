@@ -3984,20 +3984,19 @@
             <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-header bg-dark border-0">
+                            <button type="button" class="btn-close bg-secondary rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <section class="login-form-1 py-5">
+                        <div class="modal-body text-bg-dark">
+                            <section class="login-form-1" id="login-form-1">
                                 <div class="container">
                                     <div class="login-form-title mb-5">
                                         <h2>Login</h2>
                                     </div>
                                     <div class="row g-3">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <a href="#" class="btn btn-light w-100 d-flex align-items-center text-black fw-semibold"><i
-                                                    class="bi bi-phone me-3 fs-3"></i>Continue with phone</a>
+                                            <button class="btn btn-light w-100 d-flex align-items-center text-black fw-semibold first-btn"><i
+                                                    class="bi bi-phone me-3 fs-3"></i>Continue with phone</button>
                                         </div>
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4">
                                             <a href="#" class="btn btn-light w-100"><i class="bi bi-google fs-3"></i></a>
@@ -4012,7 +4011,7 @@
                                     <div class="my-3">
                                         <p class="text-center fs-4 fw-semibold">OR</p>
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="fs-4 text-black">Login with Email</a>
+                                            <a href="#" class="fs-4 text-white">Login with Email</a>
                                         </div>
                                     </div>
                                     <div class="mt-5 text-center">
@@ -4023,21 +4022,21 @@
                                 </div>
                             </section>
                             
-                            <section class="login-form-2 py-5">
+                            <section class="login-form-2 py-5" id="login-form-2">
                                 <div class="container">
                                     <div class="login-form-title mb-5">
                                         <h2>Enter your phone number</h2>
                                     </div>
                                     <div class="row g-3">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <form action="#">
+                                            <div >
                                                 <div class="form-control d-flex align-items-center">
                                                     <p class="mb-0 me-2 pe-2 border-0 border-black border-end">+91</p>
-                                                    <input class="border-0 w-100" type="number" placeholder="phone number">
+                                                    <input class="border-0 w-100" type="number" placeholder="phone number" required>
                                                 </div>
-                                                <button class="btn btn-success w-100 mt-3">Get OTP</button>
-                                            </form>
-                                            <p class="text-center mx-auto fs-5 mt-3">Your contact number is never shared with
+                                                <button class="btn btn-success w-100 mt-3 second-btn">Get OTP</button>
+                                            </div>
+                                            <p class="text-center mx-auto mt-3">Your contact number is never shared with
                                                 external parties
                                                 nor do we use it to spam you in any way.</p>
                                         </div>
@@ -4045,7 +4044,7 @@
                                 </div>
                             </section>
                             
-                            <section class="login-otp py-5">
+                            <section id="login-otp" class="login-otp py-5">
                                 <div class="container">
                                     <div class="otp-title">
                                         <h2>Verification</h2>
@@ -4060,11 +4059,11 @@
                                         <input class="rounded py-3 px-4" type="number" disabled />
                                     </div>
                             
-                                    <button class="btn btn-success w-100 mb-3">
+                                    <button class="btn btn-success w-100 mb-3 third-btn" disabled>
                                         Verify
                                     </button>
                             
-                                    <p class="resend text-muted mb-0">
+                                    <p class="resend mb-0">
                                         Didn't receive code? <a href="">Request again</a>
                                     </p>
                             
@@ -4088,7 +4087,7 @@
                                                 <input type="number" placeholder="Goverment id number" class="form-control ">
                                             </form>
                                         </div>
-                                        <button class="btn btn-success w-100 my-3">Proceed</button>
+                                        <button class="btn btn-success w-100 my-3 fourth-btn">Proceed</button>
                                         <p class="text-center">Your government ID will not be used for unsolicited communications
                                             or shared with external parties.</p>
                                     </div>
@@ -4104,7 +4103,7 @@
                                         <input class="d-none" type="file" accept="image/*" id="photoInput" capture="environment">
                                         <img id="preview" class="py-5 px-2 mb-3 border rounded" src="" alt="Photo Preview">
                                         <button id="takePhotoButton" class="btn btn-success w-100 mb-3">Take Photo</button>
-                                        <button id="nextButton" class="btn btn-light w-100" disabled>Next</button>
+                                        <button id="nextButton" class="btn btn-light w-100 fifth-btn" disabled>Next</button>
                                     </div>
                                 </div>
                             </section>
