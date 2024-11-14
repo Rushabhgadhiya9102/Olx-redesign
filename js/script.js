@@ -230,7 +230,7 @@ if (toastTrigger12) {
 // ---------------------------------- L O G I N - F O R M ( OTP ) -----------------------------------
 
 const inputs = document.querySelectorAll(".otp-field > input");
-const button = document.querySelector(".btn");
+const button = document.querySelector(".third-btn");
 
 window.addEventListener("load", () => inputs[0].focus());
 button.setAttribute("disabled", "disabled");
