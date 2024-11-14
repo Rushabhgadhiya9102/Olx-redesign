@@ -5,10 +5,10 @@
     /* outline: 1px solid red; */
 }
 
-/* #home-page,
+#home-page,
 #cart-section{
     padding-top: 80px;
-} */
+}
 
 ::placeholder{
    color: gray !important;
