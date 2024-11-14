@@ -88,15 +88,15 @@ toggleButton.addEventListener("click", function () {
 
 // --------------------------------- C A R T - S E C T I O N ----------------------------
 
-$(document).ready(function () {
-  const cart = $(".cart-section");
-  const home = $("#home-page");
-  cart.hide();
-  $(".bi-handbag-fill").on("click", function () {
-    cart.toggle();
-    home.toggle();
-  });
-});
+// $(document).ready(function () {
+//   const cart = $(".cart-section");
+//   const home = $("#home-page");
+//   cart.hide();
+//   $(".bi-handbag-fill").on("click", function () {
+//     cart.toggle();
+//     home.toggle();
+//   });
+// });
 
 // $(document).ready(function () {
 //   $(".add-to-cart").on("click", function () {
