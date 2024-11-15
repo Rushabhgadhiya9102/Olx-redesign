@@ -1,0 +1,55 @@
+@media (max-width:576px){
+
+    /* R E C O M M E N D A T I O N - I T E M S */
+
+    .recommendation-item h5,
+    .similar-section-item h5{
+        font-size: small;
+    }
+
+    .recommendation-item .card-body p,
+    .similar-section-item .card-body p{
+        font-size: 10px !important;
+    }
+
+    .recommendation-item img ,
+    .similar-section-item img{
+        height: 140px;
+    }
+
+    /* R E C O M M E N D A T I O N - I T E M S */
+
+    /* P R O D U C T - S E C T I O N */
+
+    .product-info-item ul{
+        flex-direction: column !important;
+    }
+
+    .product-content img{
+        width : 50px;
+    }
+
+    .product-info-item a{
+        font-size: small;
+    }
+
+    .product-info-item p {
+       font-size: x-small;
+    }
+
+
+    /* P R O D U C T - S E C T I O N */
+
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:1200px){
+
+}
+
+@media (max-width:1400px){
+
+}
