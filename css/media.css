@@ -1,5 +1,14 @@
 @media (max-width:576px){
 
+    /* N A V B A R - S E C T I O N */
+
+    .navbar-brand img{
+        width: 70px;
+        height: 40px;
+    }
+
+    /* N A V B A R - S E C T I O N */
+
     /* R E C O M M E N D A T I O N - I T E M S */
 
     .recommendation-item h5,
