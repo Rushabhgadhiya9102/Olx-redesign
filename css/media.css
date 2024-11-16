@@ -41,9 +41,14 @@
         font-size: 10px !important;
     }
 
+    .recommendation-item .card,
+    .similar-section-item .card{
+        height: 250px !important;
+    }
+
     .recommendation-item img ,
     .similar-section-item img{
-        height: 140px;
+        height: 120px;
     }
 
     /* R E C O M M E N D A T I O N - I T E M S */
@@ -63,11 +68,26 @@
     }
 
     .product-info-item p {
-       font-size: x-small;
+       font-size: smaller !important;
     }
 
-
     /* P R O D U C T - S E C T I O N */
+
+    /* A C C O R D I A N - F O O T E R */
+
+    .accordion-footer{
+        display: block;
+    }
+
+    .footer-brand{
+        margin-bottom: 0% !important;
+    }
+
+    .main-footer{
+        display: none;
+    }
+
+    /* A C C O R D I A N - F O O T E R */
 
 }
 

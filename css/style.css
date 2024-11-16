@@ -70,3 +70,7 @@ input:focus{
     -webkit-appearance: none;
     margin: 0;
 }
+
+.accordion-footer{
+    display: none;
+}
