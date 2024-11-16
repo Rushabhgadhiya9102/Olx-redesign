@@ -347,3 +347,24 @@ $(".fifth-btn").on('click',function (){
   $('.photo-field').hide();
   $('.login-form-end').show();
 });
+
+// ----------------- S L I C K - S L I D E R -----------------
+
+$(".slider").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  speed: 300,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  //Responsive
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});

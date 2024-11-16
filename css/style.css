@@ -28,6 +28,15 @@ input:focus{
     padding: 5px;
 }
 
+.slider{
+    display: none;
+}
+
+.slider .row{
+    scrollbar-width: none;
+    
+}
+
 .recommendation-item .card p, .similar-section-item .card p{
     font-size: small !important;
 }

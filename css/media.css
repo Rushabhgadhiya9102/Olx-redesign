@@ -9,6 +9,26 @@
 
     /* N A V B A R - S E C T I O N */
 
+    /* H O M E - P A G E - L I S T S */
+
+    .home-page-lists{
+        display: none;
+    }
+
+    .slider{
+    display: block;
+}
+
+    .slider .card img{
+        height: 25px;
+    }
+
+    .slider .card-text{
+       font-size: x-small !important;
+    }
+
+    /* H O M E - P A G E - L I S T S */
+
     /* R E C O M M E N D A T I O N - I T E M S */
 
     .recommendation-item h5,
