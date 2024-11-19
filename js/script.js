@@ -1,34 +1,15 @@
 // ---------------------------- N A V I G A T I O N - S E C T I O N ---------------------
 
-// $(document).ready(function () {
-//   var lastScrollTop = 0;
-//   var navbar = $(".navbar");
-
-//   $(window).scroll(function () {
-//     var st = $(this).scrollTop();
-
-//     if (st > lastScrollTop) {
-//       // Scroll Down
-//       navbar.css("top", "-86px"); // Hide the navbar
-//       navbar.css("transition", "0.3s"); // Hide the navbar
-//     } else {
-//       // Scroll Up
-//       navbar.css("top", "0"); // Show the navbar
-//     }
-//     lastScrollTop = st;
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   var lastScrollTop = 0;
-  var navbar = document.querySelector(".navbar");
+  const navbar = document.getElementById("nav-1");
 
   window.addEventListener("scroll", function () {
     var st = window.scrollY;
 
     if (st > lastScrollTop) {
       // Scroll Down
-      navbar.style.top = "-86px"; // Hide the navbar
+      navbar.style.top = "-100px"; // Hide the navbar
     } else {
       // Scroll Up
       navbar.style.top = "0"; // Show the navbar
@@ -37,15 +18,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var lastScrollTop = 0;
+  const navbar2 = document.getElementById("nav-2");
+
+  window.addEventListener("scroll", function () {
+    var st = window.scrollY;
+
+    if (st > lastScrollTop) {
+      // Scroll Down
+      navbar2.style.top = "-100px"; // Hide the navbar
+    } else {
+      // Scroll Up
+      navbar2.style.top = "0"; // Show the navbar
+    }
+    lastScrollTop = st; // Update last scroll position
+  });
+});
+
 // ---------------------------- N A V I G A T I O N - S E C T I O N - E N D --------------------------
 
 // ---------------------------- C O N T E N T - S E C T I O N (SHOW MORE AND LESS) ---------------------
-
-// $(".more-less,.show-less").hide();
-// $(".show-more-less").on("click", function(){
-//      $(".show-more, .show-less").toggle();
-//     $(".more-less").slideToggle(1000);
-// });
 
 // Hide elements with class 'more-less' and 'show-less' initially
 document.querySelectorAll(".more-less, .show-less").forEach(function (element) {
@@ -76,40 +69,7 @@ toggleButton.addEventListener("click", function () {
 
 // ---------------------------- C O N T E N T - S E C T I O N (SHOW MORE AND LESS) E N D ---------------------
 
-// $("#product-details").hide()
-// $(".recommendation-item").on("click", function(){
-//     $("#product-details,#home-page").toggle();
-// })
-
-// $(".navbar-brand").on("click", function () {
-//   $("#home-page").show();
-//   $("#product-details").hide();
-// });
-
 // --------------------------------- C A R T - S E C T I O N ----------------------------
-
-// $(document).ready(function () {
-//   const cart = $(".cart-section");
-//   const home = $("#home-page");
-//   cart.hide();
-//   $(".bi-handbag-fill").on("click", function () {
-//     cart.toggle();
-//     home.toggle();
-//   });
-// });
-
-// $(document).ready(function () {
-//   $(".add-to-cart").on("click", function () {
-//     // Clone the card
-//     var cardClone = $($(this).attr('for')).clone();
-
-//     cardClone.css("width","310px");
-//     // Append the cloned card to the cart container
-//     $("#cart-container").append(cardClone);
-//     $(".offer").append();
-
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get all buttons with the class 'add-to-cart'
@@ -294,8 +254,6 @@ inputs.forEach((input, index1) => {
 
 // ---------------------------------- L O G I N - F O R M ( OTP ) - E N D ----------------------------------
 
-
-
 document.getElementById("takePhotoButton").addEventListener("click", function () {
   document.getElementById("photoInput").click(); // Trigger the file input click
 });
@@ -319,33 +277,33 @@ document.getElementById("nextButton").addEventListener("click", function () {
   alert("Next step initiated.");
 });
 
-// L O G I N - F O R M 
+// L O G I N - F O R M
 
 $(".login-form-2, .login-otp, .authentication, .photo-field, .login-form-end").hide();
 
-$(".first-btn").on('click',function (){
-  $('.login-form-1').hide();
-  $('.login-form-2').show();
+$(".first-btn").on("click", function () {
+  $(".login-form-1").hide();
+  $(".login-form-2").show();
 });
 
-$(".second-btn").on('click',function (){
-  $('.login-form-2').hide();
-  $('.login-otp').show();
+$(".second-btn").on("click", function () {
+  $(".login-form-2").hide();
+  $(".login-otp").show();
 });
 
-$(".third-btn").on('click',function (){
-  $('.login-otp').hide();
-  $('.authentication').show();
+$(".third-btn").on("click", function () {
+  $(".login-otp").hide();
+  $(".authentication").show();
 });
 
-$(".fourth-btn").on('click',function (){
-  $('.authentication').hide();
-  $('.photo-field').show();
+$(".fourth-btn").on("click", function () {
+  $(".authentication").hide();
+  $(".photo-field").show();
 });
 
-$(".fifth-btn").on('click',function (){
-  $('.photo-field').hide();
-  $('.login-form-end').show();
+$(".fifth-btn").on("click", function () {
+  $(".photo-field").hide();
+  $(".login-form-end").show();
 });
 
 // ----------------- S L I C K - S L I D E R -----------------

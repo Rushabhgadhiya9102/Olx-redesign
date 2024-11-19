@@ -5,6 +5,10 @@
     /* outline: 1px solid red; */
 }
 
+#nav-2{
+    display: none;
+}
+
 #home-page,
 #cart-section{
     padding-top: 80px;
@@ -49,7 +53,9 @@ input:focus{
 .similar-section-item img, .recommendation-item img{
     object-fit: cover;
     object-position: top;
+    height: 50%;
 }
+
 
 .more-less{
     transition: 1s !important;

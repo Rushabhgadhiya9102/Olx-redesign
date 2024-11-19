@@ -16,13 +16,14 @@
     <!------------------------------- N A V I G A T I O N ----------------------------->
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <nav id="nav-1" class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/Logo@2x.png" alt="olx-logo" width="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
@@ -54,6 +55,37 @@
                             <a class="btn btn-success  py-2" data-bs-toggle="modal" href="#login-form">Sign-up</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav id="nav-2" class="navbar navbar-expand bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="d-flex w-100">
+                            <a class="navbar-brand" href="#"><img src="images/Logo@2x.png" alt="olx-logo" width="70px"></a>
+                            <ul class="navbar-nav gap-3 mb-2 mb-lg-0 align-items-center ms-auto">
+                                <li class="nav-item">
+                                    <a class="btn btn-secondary px-2" href="#">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-success px-2 " data-bs-toggle="modal" href="#login-form">Sign-up</a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <form
+                            class="d-flex mx-auto rounded-pill border-success border bg-black px-3 d-flex align-items-center"
+                            role="search">
+                            <input class="search border-0 bg-black text-white" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <i class="bi bi-search text-success"></i>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -222,7 +254,7 @@
                 <div class="row gx-3 flex-nowrap overflow-x-scroll">
                     <!------ C A R D - 1 ------>
 
-                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2 ms-md-5">
                         <div class="card text-bg-dark" style=" height: 65%;">
                             <div class="card-body text-center my-lg-4">
                                 <img src="images/cars.png" alt="cars-img" class="img-fluid mx-auto" height="42%">
@@ -336,7 +368,7 @@
                     </div>
                     <!------ C A R D - 12 ------>
 
-                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2 me-md-5">
                         <div class="card text-bg-dark" style=" height: 65%;">
                             <div class="card-body text-center my-lg-4">
                                 <img src="images/properties.png" alt="properties-img" class="img-fluid mx-auto"
@@ -367,7 +399,7 @@
                                 data-bs-target="#Modal-1">
                                 <div class="card bg-dark border-bottom border-warning border-5 border-start-0 border-end-0 border-top-0"
                                     style=" height:305px;">
-                                    <img src="images/iphone-16-1.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/iphone-16-1.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
                                         <p class="card-text">Selling iPhone 16 pro max,Two Month Used,95...</p>
@@ -384,7 +416,7 @@
                                 data-bs-target="#Modal-2">
                                 <div class="card bg-dark border-bottom border-success border-5 border-start-0 border-end-0 border-top-0"
                                     style="height:305px;">
-                                    <img src="images/ciaz-1.webp" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/ciaz-1.webp" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 5,60,000</h5>
                                         <p class="card-text">Ciaz alpha 1.5l 2 years used...</p>
@@ -400,7 +432,7 @@
                             <div class="recommendation-item" id="data3" data-bs-toggle="modal"
                                 data-bs-target="#Modal-3">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/mac-book-pro-1.jpg" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/mac-book-pro-1.jpg" class="card-img-top p-2" alt=""
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 1,40,200</h5>
@@ -417,7 +449,7 @@
                             <div class="recommendation-item" id="data4" data-bs-toggle="modal"
                                 data-bs-target="#Modal-4">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/sofa-1.jpeg" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/sofa-1.jpeg" class="card-img-top p-2" alt=""
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
@@ -434,7 +466,7 @@
                             <div class="recommendation-item" id="data5" data-bs-toggle="modal"
                                 data-bs-target="#Modal-5">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/bike-main.webp" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/bike-main.webp" class="card-img-top p-2" alt="" 
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 1,50,000</h5>
@@ -452,7 +484,7 @@
                                 data-bs-target="#Modal-6">
                                 <div class="card bg-dark" style=" height:305px;">
                                     <img src="images/commercial-truck-main.webp" class="card-img-top p-2" alt=""
-                                        height="180px">
+                                        >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹4,70,200</h5>
                                         <p class="card-text">Selling 2014 xenon 4wd...</p>
@@ -469,7 +501,7 @@
                                 data-bs-target="#Modal-7">
                                 <div class="card bg-dark" style=" height:305px;">
                                     <img src="images/orum-house-main.jpg" class="card-img-top p-2" alt=""
-                                        height="180px">
+                                        >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 4,711,243,264</h5>
                                         <p class="card-text">The 18,850 Square Feet single family home</p>
@@ -485,7 +517,7 @@
                             <div class="recommendation-item" id="data8" data-bs-toggle="modal"
                                 data-bs-target="#Modal-8">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/fashion-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/fashion-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 4,200</h5>
                                         <p class="card-text">Selling Nike air shoes,Two Month Used,95...</p>
@@ -501,7 +533,7 @@
                             <div class="recommendation-item" id="data9" data-bs-toggle="modal"
                                 data-bs-target="#Modal-9">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/books-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/books-main.jpg" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
                                         <p class="card-text">Selling iPhone 16 pro max,Two Month Used,95...</p>
@@ -517,7 +549,7 @@
                             <div class="recommendation-item" id="data10" data-bs-toggle="modal"
                                 data-bs-target="#Modal-10">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/pets-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/pets-main.jpg" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 15,200</h5>
                                         <p class="card-text">Selling Aquarium tank,Two years Used,95...</p>
@@ -533,7 +565,7 @@
                             <div class="recommendation-item" id="data11" data-bs-toggle="modal"
                                 data-bs-target="#Modal-11">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/services-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/services-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 10,200</h5>
                                         <p class="card-text">Expert Home tutor for the students future...</p>
@@ -549,7 +581,7 @@
                             <div class="recommendation-item" id="data12" data-bs-toggle="modal"
                                 data-bs-target="#Modal-12">
                                 <div class="card bg-dark" id="card1" style=" height:305px;">
-                                    <img src="images/jobs-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/jobs-main.jpg" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 35,000 - 45,000</h5>
                                         <p class="card-text">An expert web designer urgent needed</p>
@@ -571,7 +603,7 @@
                             <div class="recommendation-item" id="data1" data-bs-toggle="modal"
                                 data-bs-target="#Modal-1">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/iphone-16-1.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/iphone-16-1.jpg" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
                                         <p class="card-text">Selling iPhone 16 pro max,Two Month Used,95...</p>
@@ -587,7 +619,7 @@
                             <div class="recommendation-item" id="data2" data-bs-toggle="modal"
                                 data-bs-target="#Modal-2">
                                 <div class="card bg-dark" style="height:305px;">
-                                    <img src="images/ciaz-1.webp" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/ciaz-1.webp" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 5,60,000</h5>
                                         <p class="card-text">Ciaz alpha 1.5l 2 years used...</p>
@@ -603,7 +635,7 @@
                             <div class="recommendation-item" id="data3" data-bs-toggle="modal"
                                 data-bs-target="#Modal-3">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/mac-book-pro-1.jpg" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/mac-book-pro-1.jpg" class="card-img-top p-2" alt=""
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 1,40,200</h5>
@@ -620,7 +652,7 @@
                             <div class="recommendation-item" id="data4" data-bs-toggle="modal"
                                 data-bs-target="#Modal-4">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/sofa-1.jpeg" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/sofa-1.jpeg" class="card-img-top p-2" alt="" 
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
@@ -637,7 +669,7 @@
                             <div class="recommendation-item" id="data5" data-bs-toggle="modal"
                                 data-bs-target="#Modal-5">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/bike-main.webp" class="card-img-top p-2" alt="" height="180px"
+                                    <img src="images/bike-main.webp" class="card-img-top p-2" alt=""
                                         style="object-position: center;">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 1,50,000</h5>
@@ -655,7 +687,7 @@
                                 data-bs-target="#Modal-6">
                                 <div class="card bg-dark" style=" height:305px;">
                                     <img src="images/commercial-truck-main.webp" class="card-img-top p-2" alt=""
-                                        height="180px">
+                                        >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹4,70,200</h5>
                                         <p class="card-text">Selling 2014 xenon 4wd...</p>
@@ -672,7 +704,7 @@
                                 data-bs-target="#Modal-7">
                                 <div class="card bg-dark" style=" height:305px;">
                                     <img src="images/orum-house-main.jpg" class="card-img-top p-2" alt=""
-                                        height="180px">
+                                        >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 4,711,243,264</h5>
                                         <p class="card-text">The 18,850 Square Feet single family home</p>
@@ -688,7 +720,7 @@
                             <div class="recommendation-item" id="data8" data-bs-toggle="modal"
                                 data-bs-target="#Modal-8">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/fashion-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/fashion-main.jpg" class="card-img-top p-2" alt="" >
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 4,200</h5>
                                         <p class="card-text">Selling Nike air shoes,Two Month Used,95...</p>
@@ -704,7 +736,7 @@
                             <div class="recommendation-item" id="data9" data-bs-toggle="modal"
                                 data-bs-target="#Modal-9">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/books-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/books-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 70,200</h5>
                                         <p class="card-text">Selling iPhone 16 pro max,Two Month Used,95...</p>
@@ -720,7 +752,7 @@
                             <div class="recommendation-item" id="data10" data-bs-toggle="modal"
                                 data-bs-target="#Modal-10">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/pets-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/pets-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 15,200</h5>
                                         <p class="card-text">Selling Aquarium tank,Two years Used,95...</p>
@@ -736,7 +768,7 @@
                             <div class="recommendation-item" id="data11" data-bs-toggle="modal"
                                 data-bs-target="#Modal-11">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/services-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/services-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 10,200</h5>
                                         <p class="card-text">Expert Home tutor for the students future...</p>
@@ -752,7 +784,7 @@
                             <div class="recommendation-item" id="data12" data-bs-toggle="modal"
                                 data-bs-target="#Modal-12">
                                 <div class="card bg-dark" style=" height:305px;">
-                                    <img src="images/jobs-main.jpg" class="card-img-top p-2" alt="" height="180px">
+                                    <img src="images/jobs-main.jpg" class="card-img-top p-2" alt="">
                                     <div class="card-body text-white">
                                         <h5 class="card-title">₹ 35,000 - 45,000</h5>
                                         <p class="card-text">An expert web designer urgent needed</p>
@@ -778,7 +810,6 @@
                             </button>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
 
@@ -1002,7 +1033,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1016,7 +1047,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1030,7 +1061,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1044,7 +1075,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1279,7 +1310,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1293,7 +1324,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1307,7 +1338,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1321,7 +1352,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1552,7 +1583,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1566,7 +1597,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1580,7 +1611,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1594,7 +1625,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1825,7 +1856,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1839,7 +1870,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1853,7 +1884,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -1867,7 +1898,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2012,7 +2043,8 @@
                                                                             <h5>Returns:</h5>
                                                                         </li>
                                                                         <li>
-                                                                            <p class="ms-lg-3 mx-3">Seller does not accept
+                                                                            <p class="ms-lg-3 mx-3">Seller does not
+                                                                                accept
                                                                                 returns. <a href="#">See
                                                                                     details</a></p>
                                                                         </li>
@@ -2098,7 +2130,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2112,7 +2144,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2126,7 +2158,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2140,7 +2172,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2381,7 +2413,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2395,7 +2427,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2409,7 +2441,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2423,7 +2455,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2654,7 +2686,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2668,7 +2700,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2682,7 +2714,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2696,7 +2728,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2928,7 +2960,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2942,7 +2974,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2956,7 +2988,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -2970,7 +3002,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3201,7 +3233,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3215,7 +3247,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3229,7 +3261,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3243,7 +3275,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3474,7 +3506,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3488,7 +3520,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3502,7 +3534,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3516,7 +3548,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3745,7 +3777,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3759,7 +3791,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3773,7 +3805,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -3787,7 +3819,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -4015,7 +4047,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -4029,7 +4061,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -4043,7 +4075,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -4057,7 +4089,7 @@
                                                 <div class="similar-section-item">
                                                     <div class="card bg-dark" style=" height:305px;">
                                                         <img src="images/iphone-16-1.jpg" class="card-img-top p-2"
-                                                            alt="" height="180px">
+                                                            alt="">
                                                         <div class="card-body text-white">
                                                             <h5 class="card-title">₹ 70,200</h5>
                                                             <p class="card-text mb-2">Selling iPhone 16 pro max,Two
@@ -4291,70 +4323,83 @@
         <!--------- A C C O R D I A N - F O O T E R (Mobile)-------->
 
         <section class="accordion-footer">
-        <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="dark">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#myAccordion-1" aria-expanded="false" aria-controls="flush-collapseOne">
-                        POPULAR LOCATIONS
-                    </button>
-                </h2>
-                <div id="myAccordion-1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="dark">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myAccordion-1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            POPULAR LOCATIONS
+                        </button>
+                    </h2>
+                    <div id="myAccordion-1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myAccordion-2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            TRENDING LOCATION
+                        </button>
+                    </h2>
+                    <div id="myAccordion-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                            this being
+                            filled with some actual content.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myAccordion-3" aria-expanded="false" aria-controls="flush-collapseThree">
+                            OLX
+                        </button>
+                    </h2>
+                    <div id="myAccordion-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                            exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at first
+                            glance, a bit more representative of how this would look in a real-world application.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myAccordion-4" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ABOUT US
+                        </button>
+                    </h2>
+                    <div id="myAccordion-4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                            exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at first
+                            glance, a bit more representative of how this would look in a real-world application.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#myAccordion-2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        TRENDING LOCATION
-                    </button>
-                </h2>
-                <div id="myAccordion-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                        filled with some actual content.</div>
+            <div class="text-bg-dark px-3 d-flex">
+                <p>FOLLOW US</p>
+                <div class="ms-auto">
+                    <i class="bi bi-facebook mx-2"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter-x mx-2"></i>
+                    <i class="bi bi-youtube"></i>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#myAccordion-3" aria-expanded="false" aria-controls="flush-collapseThree">
-                        OLX
-                    </button>
-                </h2>
-                <div id="myAccordion-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                        happening here in terms of content, but just filling up the space to make it look, at least at first
-                        glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#myAccordion-4" aria-expanded="false" aria-controls="flush-collapseThree">
-                        ABOUT US
-                    </button>
-                </h2>
-                <div id="myAccordion-4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                        happening here in terms of content, but just filling up the space to make it look, at least at first
-                        glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>  
-        </div>
-        <div class="text-bg-dark px-3 d-flex">
-            <p>FOLLOW US</p>
-            <div class="ms-auto">
-                <i class="bi bi-facebook mx-2"></i>  
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-twitter-x mx-2"></i>
-                <i class="bi bi-youtube"></i>
-            </div>
-        </div>
         </section>
 
         <!--------- A C C O R D I A N - F O O T E R - E N D (Mobile) ------->
