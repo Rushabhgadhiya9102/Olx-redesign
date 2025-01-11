@@ -5,14 +5,22 @@
     /* outline: 1px solid red; */
 }
 
+/* N A V I G A T I O N */
+
 #nav-2{
     display: none;
 }
+/* N A V I G A T I O N */
 
+/* H O M E - A N D - C A R T - S E C T I O N */
 #home-page,
 #cart-section{
     padding-top: 80px;
 }
+
+/* H O M E - A N D - C A R T - S E C T I O N */
+
+/* S E A R C H - B U T T O N */
 
 ::placeholder{
    color: gray !important;
@@ -21,6 +29,8 @@
 input:focus{
    outline: none !important;
 }
+/* S E A R C H - B U T T O N */
+
 
 .navbar,
 .more-less{
@@ -32,6 +42,7 @@ input:focus{
     padding: 5px;
 }
 
+/* S L I D E R */
 .slider{
     display: none;
 }
@@ -40,6 +51,9 @@ input:focus{
     scrollbar-width: none;
     
 }
+/* S L I D E R */
+
+/* R E C O M M E N D A T I O N - A N D - S I M I L A R - S E C T I O N */
 
 .recommendation-item .card p, .similar-section-item .card p{
     font-size: small !important;
@@ -56,6 +70,7 @@ input:focus{
     height: 50%;
 }
 
+/* R E C O M M E N D A T I O N - A N D - S I M I L A R - S E C T I O N */
 
 .more-less{
     transition: 1s !important;
@@ -67,6 +82,8 @@ input:focus{
     color: transparent;
 }
 
+/* O T P - V E R I F I C A T I O N */
+
 .otp-field input {
     width: 65px;
 }
@@ -77,6 +94,12 @@ input:focus{
     margin: 0;
 }
 
+/* O T P - V E R I F I C A T I O N */
+
+/* F O O T E R */
+
 .accordion-footer{
     display: none;
 }
+
+/* F O O T E R */

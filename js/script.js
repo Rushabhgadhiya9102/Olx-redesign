@@ -277,52 +277,39 @@ document.getElementById("nextButton").addEventListener("click", function () {
   alert("Next step initiated.");
 });
 
-// L O G I N - F O R M
+// --------------------- L O G I N - F O R M - T R A N S I T I O N -------------------------
 
-$(".login-form-2, .login-otp, .authentication, .photo-field, .login-form-end").hide();
-
-$(".first-btn").on("click", function () {
-  $(".login-form-1").hide();
-  $(".login-form-2").show();
+// Hide all forms initially
+document.querySelectorAll(".login-form-2, .login-otp, .authentication, .photo-field, .login-form-end").forEach(function (element) {
+  element.style.display = "none";
 });
 
-$(".second-btn").on("click", function () {
-  $(".login-form-2").hide();
-  $(".login-otp").show();
+// Show the second login form when the first button is clicked
+document.querySelector(".first-btn").addEventListener("click", function () {
+  document.querySelector(".login-form-1").style.display = "none";
+  document.querySelector(".login-form-2").style.display = "block";
 });
 
-$(".third-btn").on("click", function () {
-  $(".login-otp").hide();
-  $(".authentication").show();
+// Show the OTP form when the second button is clicked
+document.querySelector(".second-btn").addEventListener("click", function () {
+  document.querySelector(".login-form-2").style.display = "none";
+  document.querySelector(".login-otp").style.display = "block";
 });
 
-$(".fourth-btn").on("click", function () {
-  $(".authentication").hide();
-  $(".photo-field").show();
+// Show the authentication form when the third button is clicked
+document.querySelector(".third-btn").addEventListener("click", function () {
+  document.querySelector(".login-otp").style.display = "none";
+  document.querySelector(".authentication").style.display = "block";
 });
 
-$(".fifth-btn").on("click", function () {
-  $(".photo-field").hide();
-  $(".login-form-end").show();
+// Show the photo field when the fourth button is clicked
+document.querySelector(".fourth-btn").addEventListener("click", function () {
+  document.querySelector(".authentication").style.display = "none";
+  document.querySelector(".photo-field").style.display = "block";
 });
 
-// ----------------- S L I C K - S L I D E R -----------------
-
-$(".slider").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  dots: true,
-  speed: 300,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  //Responsive
-  responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
+// Show the end form when the fifth button is clicked
+document.querySelector(".fifth-btn").addEventListener("click", function () {
+  document.querySelector(".photo-field").style.display = "none";
+  document.querySelector(".login-form-end").style.display = "block";
 });
