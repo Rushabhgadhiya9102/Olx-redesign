@@ -313,3 +313,4 @@ document.querySelector(".fifth-btn").addEventListener("click", function () {
   document.querySelector(".photo-field").style.display = "none";
   document.querySelector(".login-form-end").style.display = "block";
 });
+// --------------------- L O G I N - F O R M - T R A N S I T I O N -------------------------
